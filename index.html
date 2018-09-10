@@ -1,0 +1,397 @@
+<html>
+<head>
+  <title>CSC Billiard Analytics</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/home/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet">
+  <link id="css" rel="stylesheet" type="text/css" href="style.css"/>
+
+  <style>
+  table {
+    color: black;
+  }
+
+  #about, #exam-info {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  #img-over {
+    position: relative;
+    padding-top: 35px;
+  }
+  #logo {
+
+  }
+
+  #overlay-text {
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    text-align:center;
+    font-size: 1.4em;
+  }
+
+  #overlay-title {
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    text-align:center;
+  }
+
+  #tutorial {
+    margin: 0;
+  }
+
+  .index-p {
+    font-size: 1.2em;
+  }
+
+  .animate {
+    font-size: 50px;
+    margin: 100px 0 0;
+  }
+
+  .animate span {
+    display: inline-block;
+    top: 20%;
+  }
+
+  .animate span:nth-of-type(2) {animation-delay: .05s;}
+  .animate span:nth-of-type(3) {animation-delay: .1s;}
+  .animate span:nth-of-type(4) {animation-delay: .15s;}
+  .animate span:nth-of-type(5) {animation-delay: .2s;}
+  .animate span:nth-of-type(6) {animation-delay: .25s;}
+  .animate span:nth-of-type(7) {animation-delay: .3s;}
+  .animate span:nth-of-type(8) {animation-delay: .35s;}
+  .animate span:nth-of-type(9) {animation-delay: .4s;}
+  .animate span:nth-of-type(10) {animation-delay: .45s;}
+  .animate span:nth-of-type(11) {animation-delay: .5s;}
+  .animate span:nth-of-type(12) {animation-delay: .55s;}
+  .animate span:nth-of-type(13) {animation-delay: .6s;}
+  .animate span:nth-of-type(14) {animation-delay: .65s;}
+  .animate span:nth-of-type(15) {animation-delay: .7s;}
+  .animate span:nth-of-type(16) {animation-delay: .75s;}
+  .animate span:nth-of-type(17) {animation-delay: .8s;}
+  .animate span:nth-of-type(18) {animation-delay: .85s;}
+  .animate span:nth-of-type(19) {animation-delay: .9s;}
+  .animate span:nth-of-type(20) {animation-delay: .95s;}
+
+  .one span {
+    color: black;
+    font-family: 'Arvo', sans-serif;
+    font-size: 46pt;
+    opacity: 0;
+    transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+    animation: revolveScale .4s forwards;
+  }
+
+  @keyframes revolveScale {
+    60% {
+      transform: translate(20px, 20px) rotate(30deg) scale(.3);
+    }
+
+    100% {
+      transform: translate(0) rotate(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div id="img-over">
+      <center><div class="animate one" id="overlay-title">
+        <span>C</span><span>S</span><span>C</span>&nbsp;
+        <span>B</span><span>i</span><span>l</span><span>l</span><span>i</span><span>a</span><span>r</span><span>d</span>&nbsp;
+        <span>A</span><span>n</span><span>a</span><span>l</span><span>y</span><span>t</span><span>i</span><span>c</span><span>s</span></center>
+        <img src="img/home/logo.png" alt="logo" width="10%"class="img-responsive center-block" id="logo"/>
+        <p id="overlay-text"><i>Bringing out the <b>best</b> of your abilities!</i></p>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span class="active">Billiard Analytics </span> <span class="sr-only">Current</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li><a href="examFundamentals.html">Exam I </a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Exam II <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="examSkills.html">Bachelors</a></li>
+                <li><a href="examSkillsM.html">Masters</a></li>
+                <li><a href="examSkillsD.html">Doctorate</a></li>
+              </ul>
+            </li>
+            <li><a href="searchProfile.html">Profiles</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-left">
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signUp.html">Sign Up</a></li>
+            <li><a href="projectTeam.html">Project Team</a></li>
+            <li><a href="xtreme.html">X-Treme App</a></li>
+
+            <li><a href="http://billiarduniversity.org/exams.html" target="_blank">BU Site</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="alert alert-success">
+      <strong>Notice! </strong>The site is finally fully functional! We have removed profiles that did not contain any exam data to clear any duplicate accounts that may have been created when the site was buggy. 
+    </div>
+
+    <div class="main">
+
+      <div class="row">
+        <div id="about" class="col-sm-6">
+          <h2><center><b>About</b></center></h2>
+          <p class="index-p">Welcome to the <b>Cue Sports Club Billiard Analytics</b> website! If you've ever wanted to evaluate how well you actually play, we allow you to take a two part exam that can help you understand your strengths and weaknesses. </p>
+          <p class="index-p">The exam is officially designed by <b><a href="http://billiarduniversity.org/" target="_blank">Billiard University</a></b> (founded in 2012). The purpose is to <i>"provide a complete, structured, well designed, and challenging pool workout you can use to develop and improve your game to reach the next level."</i></p>
+          <p class="index-p"><b>Personal Analysis</b> After you've taken your exam, you will be taken to your profile page to see a breakdown and a chart displaying your abilities in the areas of: ball control, accuracy, positioning, complex situation ability, safe ability, special shot ability, break ability.</p>
+          <p class="index-p"> <b>Create an Account</b> An account is required to save and see your results. <b><a href="signUp.html">Sign up here!</a></b></p>
+          <p class="index-p"><b>Ready to take the exam?</b> Before you begin, please read about the exams and setup the pool table as shown in the diagram below.
+          </p>
+          <p class="index-p">Print out the required <a href="http://billiarduniversity.org/documents/BU_Rectangular_Target.pdf" target="_blank">Rectangle Template</a> for the exams.</p>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#alertModal">Take the Exam!</button>
+        </div>
+
+        <div id="exam-info" class="col-sm-6">
+          <h2><center><b>Exams</b></center></h2>
+          <p class="index-p"><b>Exam I: Fundamentals</b></p>
+          <p class="index-p">The first exam covers fundamentals including aiming, stroke, stop/follow/draw control, and cue ball position control.</p>
+          <p class="index-p"><b>Exam II: Skills</b></p>
+          <p class="index-p">The second exam assesses important pool skills including aiming, position play, rail cut shots, safeties, kicks and banks, jump and masse shots, and the break.</p>
+
+          <p class="index-p"><b>Exam II Levels</b></p>
+          <p class="index-p">There are three different levels of Exam II (Bachelors, Masters, and Doctorate). Your performance on Exam I places you into the appropriate Exam II. The difficulty level and number of available points increases with exam level. So, please take the appropriate exam. If you have taken Exam I, but are unsure about which Exam II you are supposed to take, please see your profile page which will indicate the appropriate exam.</p>
+
+        </div>
+      </div>
+
+      <div id="alertModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Which exam would you like to take?</h4>
+            </div>
+            <div class="modal-body">
+              <p>It is recommended that you have someone else record your scores.</p>
+            </div>
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col-sm-1">
+                  <button type="button" class="btn btn-primary modButton" id="button-full" data-dismiss="modal" onclick="exam1()">Exam I (Fundamentals)</button>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-success modButton" data-dismiss="modal" onclick="exam2()">Exam II (Bachelors)</button>
+                </div>
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-success modButton" data-dismiss="modal" onclick="exam3()">Exam II (Masters)</button>
+                </div>
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-success modButton" data-dismiss="modal" onclick="exam4()">Exam II (Doctorate)</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h2><center><b>Exam Table Setup</b></center></h2>
+          <img src="img/home/1.png" alt="General Setup" width="100%" >
+        </div>
+
+        <div class="col-sm-6">
+          <h2><center><b>Demonstration</b></center></h2>
+          <center><iframe
+          id="tutorial"
+          width="97%" height="55%"
+          src="https://www.youtube-nocookie.com/embed/zoU_ZSyN3XI?rel=0"
+          frameborder="0" gesture="media"
+          allow="encrypted-media"
+          allowfullscreen>   
+          </iframe></center>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-sm-6">
+        <h2><center><b>Final Point Conversion</b></center></h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Score</th>
+                <th>Player Category</th>
+                <th>Player Level</th>
+                <th>A-D Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>180-200</td>
+                <td>Pro</td>
+                <td>Professional</td>
+                <td>A+++</td>
+              </tr>
+              <tr>
+                <td>160-179</td>
+                <td>Semi-Pro</td>
+                <td>Master</td>
+                <td>A++</td>
+              </tr>
+              <tr>
+                <td>140-159</td>
+                <td>Advanced 3</td>
+                <td>Expert</td>
+                <td>A+</td>
+              </tr>
+              <tr>
+                <td>125-139</td>
+                <td>Advanced 2</td>
+                <td>Upper Advanced</td>
+                <td>A-/B+</td>
+              </tr>
+              <tr>
+                <td>110-124</td>
+                <td>Advanced 1</td>
+                <td>Lower Advanced</td>
+                <td>B/B-</td>
+              </tr>
+              <tr>
+                <td>95-109</td>
+                <td>Intermediate 3</td>
+                <td>Upper Intermediate</td>
+                <td>B-/C+</td>
+              </tr>
+              <tr>
+                <td>70-94</td>
+                <td>Intermediate 2</td>
+                <td>Middle Intermediate</td>
+                <td>C+/C</td>
+              </tr>
+              <tr>
+                <td>55-69</td>
+                <td>Intermediate 1</td>
+                <td>Lower Intermediate</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>40-54</td>
+                <td>Beginner 3</td>
+                <td>Upper Novice</td>
+                <td>C-</td>
+              </tr>
+              <tr>
+                <td>30-39</td>
+                <td>Beginner 2</td>
+                <td>Middle Novice</td>
+                <td>D+</td>
+              </tr>
+              <tr>
+                <td>20-29</td>
+                <td>Beginner 1</td>
+                <td>Lower Novice</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td>0-19</td>
+                <td>Beginner 0</td>
+                <td>Absolute Beginner</td>
+                <td>D-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <footer>
+        <div class="row" id="foot">
+          <div class="col-sm-3">
+            <h4><p>Powered by Heroku</p></h4>
+          </div>
+
+          <div class="col-sm-3">
+            <h4>
+              <p><a href="index.html">About the Site</a></p>
+              <p><a href="signUp.html">Create an Account</a></p>
+              <p><a href="faq.html">FAQ</a></p>
+            </h4>
+          </div>
+
+          <div class="col-sm-3">
+            <h4>
+              <p><a href="projectTeam.html">Project Team</a></p>
+              <p><a href="http://billiarduniversity.org/">Billiard University Site</a></p>
+            </h4>
+          </div>
+
+          <div class="col-sm-3">
+            <p>
+              <h4>Contact Us:<br/>
+              <i>cscbilliardanalytics@gmail.com</i></h4>
+            </p>
+
+            <p>
+              Approved by Dr. Dave Alciatore<br/>Billiard University<br/> [December 2017]
+            </p>
+          </div>
+        </div>
+
+      </footer>
+
+    </div>
+    
+  </body>
+
+    <script>
+
+      function exam1() {
+        window.location.href = "examFundamentals.html";
+      }
+
+      function exam2() {
+        window.location.href = "examSkills.html";
+      }
+
+      function exam3() {
+        window.location.href = "examSkillsM.html";
+      }
+
+      function exam4() {
+        window.location.href = "examSkillsD.html";
+      }
+
+    </script>
+  </html>
