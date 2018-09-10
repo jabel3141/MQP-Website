@@ -34,15 +34,14 @@
 			Character and animation from <a href="https://www.mixamo.com/" target="_blank" rel="noopener">Mixamo</a>
 		</div>
 
-		<script src="build/three.js"></script>
+		<script src="/three.js-master/build/three.js"></script>
+		<script src="/three.js-master/examples/js/libs/inflate.min.js"></script>
+		<script src="/three.js-master/examples/js/loaders/FBXLoader.js"></script>
 
-		<script src="examples/js/libs/inflate.min.js"></script>
-		<script src="examples/js/loaders/FBXLoader.js"></script>
+		<script src="/three.js-master/examples/js/controls/OrbitControls.js"></script>
 
-		<script src="examples/js/controls/OrbitControls.js"></script>
-
-		<script src="examples/js/Detector.js"></script>
-		<script src="examples/js/libs/stats.min.js"></script>
+		<script src="/three.js-master/examples/js/Detector.js"></script>
+		<script src="/three.js-master/examples/js/libs/stats.min.js"></script>
 
 		<script>
 
@@ -102,7 +101,7 @@
 
 				// model
 				var loader = new THREE.FBXLoader();
-				loader.load( 'examples/models/fbx/Samba Dancing.fbx', function ( object ) {
+				loader.load( '/three.js-master/examples/models/fbx/SambaDancing.fbx', function ( object ) {
 
 					object.mixer = new THREE.AnimationMixer( object );
 					mixers.push( object.mixer );

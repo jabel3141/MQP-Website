@@ -12,11 +12,39 @@ var server = http.createServer(function (req, res) {
   // You'll need to modify the below to account for POSTs
   switch( uri.pathname ) {
     case '/':
-    sendFile(res, 'three.js-master/examples/webgl_loader_fbx.html')
+    sendFile(res, 'Oni.html')
     break
 
-    case '/index.html':
-    sendFile(res, 'index.html')
+    case '/three.js-master/build/three.js':
+    sendFile(res, 'three.js-master/build/three.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/js/libs/inflate.min.js':
+    sendFile(res, 'three.js-master/examples/js/libs/inflate.min.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/js/loaders/FBXLoader.js':
+    sendFile(res, 'three.js-master/examples/js/loaders/FBXLoader.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/js/controls/OrbitControls.js':
+    sendFile(res, 'three.js-master/examples/js/controls/OrbitControls.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/js/Detector.js':
+    sendFile(res, 'three.js-master/examples/js/Detector.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/js/libs/stats.min.js':
+    sendFile(res, 'three.js-master/examples/js/libs/stats.min.js', 'text/javascript')
+    break
+
+    case '/three.js-master/examples/models/fbx/SambaDancing.fbx':
+    sendFile(res, 'three.js-master/examples/models/fbx/SambaDancing.fbx', 'application/fbx')
+    break
+
+    case '/ONI_FBX.fbx':
+    sendFile(res, 'ONI_FBX.fbx', 'application/fbx')
     break
 
 
