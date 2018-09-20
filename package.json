@@ -1,7 +1,7 @@
 {
-  "name": "cs4241-a3-YOURNAME",
+  "name": "MQP-Project",
   "version": "0.0.1",
-  "description": "WPI CS 4241 Assignment 3",
+  "description": "MQP Project",
   "author": "",
   "private": true,
   "scripts": {
