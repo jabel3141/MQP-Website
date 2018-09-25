@@ -36,8 +36,6 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/Enemies.html">All Enemies</a>
           <a class="dropdown-item" href="/Oni.html">Oni</a>
-          <a class="dropdown-item" href="/Kamaitachi.html">Kamaitachi</a>
-          <a class="dropdown-item" href="/Nue.html">Nue</a>
         </div>
       </li>
       <!-- Dropdown -->
@@ -77,32 +75,6 @@
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-sm-6"  align="center">
-          <H4>Kamaitachi</H4>
-          <p>Short Description</p>
-          <a href="/Kamaitachi.html" role="button" class="btn btn-success btn-block">Take a closer look!</a>
-        </div>
-        <div class="col-sm-6" align="center">
-          <div id="kamaitachi">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-sm-6" align="center">
-          <div id="nue">
-          </div>
-        </div>
-        <div class="col-sm-6"  align="center">
-          <H4>Nue</H4>
-          <p>Short Description</p>
-          <a href="/Nue.html" role="button" class="btn btn-success btn-block">Take a closer look!</a>
-        </div>
-      </div>
-    </div>
     
 
     <script src="/three.js-master/build/three.js"></script>
@@ -133,14 +105,14 @@
       var material;
 
       var clock = []
-      for ( var k = 0; k < 3; k++ ) {
+      for ( var k = 0; k < 1; k++ ) {
           clock[k] = new THREE.Clock();; 
       }
 
 
       var mixers = [];
 
-      for ( var n = 0; n < 3; n++ ) {
+      for ( var n = 0; n < 1; n++ ) {
           mixers[n] = []; 
       }
 
@@ -149,20 +121,16 @@
       var id3 = "nue";
 
       var fbx1 = '/Oni.fbx';
-      var fbx2 = '/SwordAndShieldDeath.fbx';
-      var fbx3 = '/SwordAndShieldDeath.fbx';
 
       var width = 600;
       var height = 300;
 
       var radius = 200;
-      var thetaXZ = [0, 0, 0];
-      var thetaY = [0, 0, 0];
+      var thetaXZ = [0];
+      var thetaY = [0];
       var thetaY2 = 170;
 
       init(id1, fbx1, 0);
-      init(id2, fbx2, 1);
-      init(id3, fbx3, 2);
 
       animate();
 
@@ -260,7 +228,7 @@
 
       function onWindowResize() {
 
-        for(var i = 0; i < 3; i++){
+        for(var i = 0; i < 1; i++){
           camera[i].aspect = width / height;
           camera[i].updateProjectionMatrix();
 
@@ -276,7 +244,7 @@
 
         requestAnimationFrame( animate );
 
-        for(var i = 0; i < 3; i++){
+        for(var i = 0; i < 1; i++){
         
           render(i);
 

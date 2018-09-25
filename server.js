@@ -33,14 +33,6 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'Oni.html')
     break
 
-    case '/Kamaitachi.html':
-    sendFile(res, 'Kamaitachi.html')
-    break
-
-    case '/Nue.html':
-    sendFile(res, 'Nue.html')
-    break
-
     case '/ArcherTower.html':
     sendFile(res, 'ArcherTower.html')
     break
@@ -139,6 +131,10 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'models/Bridge.fbx', 'application/fbx')
     break
 
+    case '/Gong.fbx':
+    sendFile(res, 'models/Gong.fbx', 'application/fbx')
+    break
+
     case '/Kunai.fbx':
     sendFile(res, 'models/Kunai.fbx', 'application/fbx')
     break
@@ -169,10 +165,6 @@ var server = http.createServer(function (req, res) {
 
     case '/OniWalk.fbx':
     sendFile(res, 'models/OniWalk.fbx', 'application/fbx')
-    break
-
-    case '/SwordAndShieldDeath.fbx':
-    sendFile(res, 'models/SwordAndShieldDeath.fbx', 'application/fbx')
     break
 
 
