@@ -65,6 +65,10 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'PlayerTower.html')
     break
 
+    case '/projectTeam':
+    sendFile(res, 'ProjectTeam.html')
+    break
+
     case '/RockWall.html':
     sendFile(res, 'RockWall.html')
     break
