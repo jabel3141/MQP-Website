@@ -13,16 +13,44 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'Index.html')
     break
 
-    case '/Index.html':
-    sendFile(res, 'Index.html')
+    case '/ArcherTower.html':
+    sendFile(res, 'ArcherTower.html')
+    break
+
+    case '/Arrow.html':
+    sendFile(res, 'Arrow.html')
+    break
+
+    case '/BellTower.html':
+    sendFile(res, 'BellTower.html')
+    break
+
+    case '/Bridge.html':
+    sendFile(res, 'Bridge.html')
     break
 
     case '/Enemies.html':
     sendFile(res, 'Enemies.html')
     break
 
-    case '/Towers.html':
-    sendFile(res, 'Towers.html')
+    case '/Gong.html':
+    sendFile(res, 'Gong.html')
+    break
+
+    case '/Index.html':
+    sendFile(res, 'Index.html')
+    break
+
+    case '/Kunai.html':
+    sendFile(res, 'Kunai.html')
+    break
+
+    case '/KunaiTower.html':
+    sendFile(res, 'KunaiTower.html')
+    break
+
+    case '/Ladder.html':
+    sendFile(res, 'Ladder.html')
     break
 
     case '/Misc.html':
@@ -33,50 +61,21 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'Oni.html')
     break
 
-    case '/ArcherTower.html':
-    sendFile(res, 'ArcherTower.html')
-    break
-
-    case '/KunaiTower.html':
-    sendFile(res, 'KunaiTower.html')
-    break
-
-    case '/BellTower.html':
-    sendFile(res, 'BellTower.html')
-    break
-
     case '/PlayerTower.html':
     sendFile(res, 'PlayerTower.html')
-    break
-
-    case '/Arrow.html':
-    sendFile(res, 'Arrow.html')
-    break
-
-    case '/Kunai.html':
-    sendFile(res, 'Kunai.html')
-    break
-
-    case '/Gong.html':
-    sendFile(res, 'Gong.html')
-    break
-
-    case '/Tori.html':
-    sendFile(res, 'Tori.html')
     break
 
     case '/RockWall.html':
     sendFile(res, 'RockWall.html')
     break
 
-    case '/Ladder.html':
-    sendFile(res, 'Ladder.html')
+    case '/Tori.html':
+    sendFile(res, 'Tori.html')
     break
 
-    case '/Bridge.html':
-    sendFile(res, 'Bridge.html')
+    case '/Towers.html':
+    sendFile(res, 'Towers.html')
     break
-
 
     /////////////////////// Three.js files //////////////////////////////////
 
@@ -84,12 +83,8 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'three.js-master/build/three.js', 'text/javascript')
     break
 
-    case '/three.js-master/examples/js/libs/inflate.min.js':
-    sendFile(res, 'three.js-master/examples/js/libs/inflate.min.js', 'text/javascript')
-    break
-
-    case '/three.js-master/examples/js/loaders/FBXLoader.js':
-    sendFile(res, 'three.js-master/examples/js/loaders/FBXLoader.js', 'text/javascript')
+    case '/three.js-master/examples/js/cameras/CinematicCamera.js':
+    sendFile(res, 'three.js-master/examples/js/cameras/CinematicCamera.js', 'text/javascript')
     break
 
     case '/three.js-master/examples/js/controls/OrbitControls.js':
@@ -100,18 +95,21 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'three.js-master/examples/js/Detector.js', 'text/javascript')
     break
 
+    case '/three.js-master/examples/js/libs/inflate.min.js':
+    sendFile(res, 'three.js-master/examples/js/libs/inflate.min.js', 'text/javascript')
+    break
+
     case '/three.js-master/examples/js/libs/stats.min.js':
     sendFile(res, 'three.js-master/examples/js/libs/stats.min.js', 'text/javascript')
     break
 
-    case '/three.js-master/examples/js/cameras/CinematicCamera.js':
-    sendFile(res, 'three.js-master/examples/js/cameras/CinematicCamera.js', 'text/javascript')
+    case '/three.js-master/examples/js/loaders/FBXLoader.js':
+    sendFile(res, 'three.js-master/examples/js/loaders/FBXLoader.js', 'text/javascript')
     break
 
     case '/three.js-master/examples/js/shaders/BokehShader2.js':
     sendFile(res, 'three.js-master/examples/js/shaders/BokehShader2.js', 'text/javascript')
     break
-
 
     /////////////////////// Animations //////////////////////////////////
 
@@ -163,16 +161,7 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'models/Tori.fbx', 'application/fbx')
     break
 
-    case '/OniWalk.fbx':
-    sendFile(res, 'models/OniWalk.fbx', 'application/fbx')
-    break
-
-
     /////////////////////// IMAGES //////////////////////////////////
-
-    case '/Tower.jpg':
-    sendFile(res, 'images/Tower.jpg', 'image/jpg')
-    break
 
     case '/Enemy.jpg':
     sendFile(res, 'images/Enemy.jpg', 'image/jpg')
@@ -180,6 +169,10 @@ var server = http.createServer(function (req, res) {
 
     case '/Misc.jpg':
     sendFile(res, 'images/Misc.jpg', 'image/jpg')
+    break
+
+    case '/Tower.jpg':
+    sendFile(res, 'images/Tower.jpg', 'image/jpg')
     break
 
     ////////////////////// OTHER ////////////////////////////////////
