@@ -175,6 +175,10 @@ var server = http.createServer(function (req, res) {
     sendFile(res, 'images/Misc.jpg', 'image/jpg')
     break
 
+    case '/Promo.jpg':
+    sendFile(res, 'images/Promo.jpg', 'image/jpg')
+    break
+
     case '/Tower.jpg':
     sendFile(res, 'images/Tower.jpg', 'image/jpg')
     break
